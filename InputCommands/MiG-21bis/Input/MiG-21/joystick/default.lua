@@ -820,9 +820,10 @@ return {
         {cockpit_device_id = devices.WEAPON_CONTROL, down = device_commands.GUVArm2, up = device_commands.GUVArm2, value_down = 1, value_up = 0, name = _('UPK-23 Gun Pod Reload Button 2'), category = {_('UPK-23 Gun Pod Panel'), _('Custom')}},
         {cockpit_device_id = devices.WEAPON_CONTROL, down = device_commands.GUVArm3, up = device_commands.GUVArm3, value_down = 1, value_up = 0, name = _('UPK-23 Gun Pod Reload Button 3'), category = {_('UPK-23 Gun Pod Panel'), _('Custom')}},
 
-        -- General
+        -- General & View
         {down = iCommandViewBriefing,name=_('View briefing on/off'),category = _('General')},
         {down = iCommandPlane_ShowControls, name=_('Show controls indicator'),category=_('General')},
+        {down = iCommandToggleMirrors, name=_('Toggle Mirror'),category=_('View')},
     },
     axisCommands = {
         {cockpit_device_id = devices.FUEL_SYSTEM, action = device_commands.FuelQt, name = _('Fuel Quantity Set')},
